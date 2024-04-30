@@ -11,10 +11,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 115vh;
+    min-height: 110vh;
     background: url('beautiful-background.jpg')no-repeat;
     background-size: cover;
     background-position: center;
+    overflow-y: hidden;
 }
 
 header {
@@ -65,10 +66,8 @@ header {
 }
 
 .navigation .btnLogin-popup {
-    width: 130px;
-    height: 50px;
     background: transparent;
-    border: 2px solid black;
+    border: 1px solid black;
     outline: none;
     border-radius: 6px;
     cursor: pointer;
@@ -82,8 +81,8 @@ header {
 }
 
 .btnLogin-popup {
-    width: 150px;
-    height: 45px;
+    width: 100px;
+    height: 35px;
     color: #162938;
     background-color: #dbd955;
 }
@@ -286,4 +285,29 @@ header {
 .login-register p a:hover {
     text-decoration: underline;
 
+}
+
+
+@media only screen and (max-width:700px) {
+    .navigation {
+        width: 100%;
+        position: absolute;
+        top: 75px;
+        right: 0;
+        z-index: 2;
+    }
+
+    .navigation .li {
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        display: none;
+    }
+
+    .btnLogin-popup {
+        position: absolute;
+        margin-right: 20px;
+        top: 0;
+        right:0;
+    }
 }
