@@ -270,10 +270,14 @@ header {
 
 .login-register {
     font-size: .9em;
-    color: black;
+    color: #162938;
     text-align: center;
     font-weight: 500;
     margin: 25px 0 10px;
+}
+
+.reg_bg {
+    color: #162938;
 }
 
 .login-register p a {
